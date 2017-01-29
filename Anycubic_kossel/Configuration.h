@@ -635,8 +635,8 @@
 //    O-- FRONT --+
 //  (0,0)
 #define X_PROBE_OFFSET_FROM_EXTRUDER 0     // X offset: -left  +right  [of the nozzle]
-#define Y_PROBE_OFFSET_FROM_EXTRUDER -10   // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -3.5  // Z offset: -below +above  [the nozzle]
+#define Y_PROBE_OFFSET_FROM_EXTRUDER 0   // Y offset: -front +behind [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER 0.1  // Z offset: -below +above  [the nozzle]
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 4000
@@ -649,7 +649,7 @@
 
 // Allen key retractable z-probe as seen on many Kossel delta printers - http://reprap.org/wiki/Kossel#Automatic_bed_leveling_probe
 // Deploys by touching z-axis belt. Retracts by pushing the probe down. Uses Z_MIN_PIN.
-#define Z_PROBE_ALLEN_KEY
+//#define Z_PROBE_ALLEN_KEY
 
 #if ENABLED(Z_PROBE_ALLEN_KEY)
   // 2 or 3 sets of coordinates for deploying and retracting the spring loaded touch probe on G29,
