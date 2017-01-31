@@ -458,7 +458,7 @@
   #define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-(DELTA_EFFECTOR_OFFSET)-(DELTA_CARRIAGE_OFFSET))
 
   // Print surface diameter/2 minus unreachable space (avoid collisions with vertical towers).
-  #define DELTA_PRINTABLE_RADIUS 90
+  #define DELTA_PRINTABLE_RADIUS 75
 
   // Delta calibration menu
   // uncomment to add three points calibration menu option.
@@ -603,7 +603,7 @@
 // For example an inductive probe, or a setup that uses the nozzle to probe.
 // An inductive probe must be deactivated to go below
 // its trigger-point if hardware endstops are active.
-//#define FIX_MOUNTED_PROBE
+#define FIX_MOUNTED_PROBE
 
 // The BLTouch probe emulates a servo probe.
 // The default connector is SERVO 0. Set Z_ENDSTOP_SERVO_NR below to override.
